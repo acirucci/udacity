@@ -58,10 +58,6 @@ def rearrange_digits_sort(input_list):
             j += 1
             k += 1
 
-        #print("Input list:\t{}".format(input_list))
-        #print("Upper list:\t{}".format(ul))
-        #print("Lower list:\t{}\n".format(ll))
-
 
 def rearrange_digits(input_list):
     """
@@ -99,9 +95,6 @@ def rearrange_digits(input_list):
     # turn those lists into integers
     val_0 = int_from_list(val_0_list)
     val_1 = int_from_list(val_1_list)
-
-    #print("Value 0:\t{}".format(val_0))
-    #print("Value 1:\t{}\n".format(val_1))
 
     return [val_0, val_1]
 
