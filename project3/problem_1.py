@@ -7,10 +7,8 @@ def midpoint(lv, hv):
 
     # if difference is even, return the midpoint, otherwise the ceil of midpt
     if v % 2 == 0:
-        #print("Midpoint is {}/2 = {}".format(v, int(v/2)))
         return int(v/2)
     else:
-        #print("Midpoint is {}/2 = {}".format(v, int((v + 1) / 2)))
         return int((v + 1) / 2)
 
 # Recursively find the root
@@ -20,15 +18,12 @@ def get_root(n, lb, ub):
 
     # no consecutive square is more than 2mp+1 away: (mp + 1)^2 - mp^2 = 2mp + 1
     if (n >= test) and ((n - test) < 2 * mp + 1):
-        #print("Returning {}".format(mp))
         return mp
 
     # otherwise, recursive search by halves
     if test < n:
-        #print("{} is less than {}, so ({}, {})".format(test, n, mp, ub))
         return get_root(n, mp, ub)
     else:
-        #print("{} is more than {}, so ({}, {})".format(test, n, lb, mp))
         return get_root(n, lb, mp)
 
 def sqrt(number):

@@ -80,7 +80,6 @@ def rearrange_digits(input_list):
         return [-1]
 
     rearrange_digits_sort(input_list)
-    #print("Sorted List:\t{}\n".format(input_list))
 
     # now make two alternating arrays (this is O(n))
     val_0_list = []
