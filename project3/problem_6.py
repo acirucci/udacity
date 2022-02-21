@@ -11,6 +11,9 @@ def get_min_max(ints):
     Args:
        ints(list): list of integers containing one or more integers
     """
+    if len(ints) == 0:
+        return (None, None)
+    
     # initialize the maxs/min values to their extremes
     max = -sys.maxsize
     min = sys.maxsize
